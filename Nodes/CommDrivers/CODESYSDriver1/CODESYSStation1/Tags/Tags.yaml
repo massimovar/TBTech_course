@@ -1,0 +1,453 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: Application
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: GVL
+    Type: TagStructure
+    DataType: Structure
+    Value: 
+     {
+      "Type": 22,
+      "Body": {
+       "TypeId": {
+        "IdType": 0,
+        "Id": 0,
+        "Namespace": -1
+       },
+       "Body":    {}
+      }
+     }
+    Children:
+    - Name: Motori
+      Id: g=79437f33a5b5dee9fd322604f9992908
+      Type: TagStructure
+      DataType: Structure
+      ValueRank: OneDimension
+      ArrayDimensions: [6]
+      Value: {"Type":22,"Body":[{"TypeId":{"IdType":0,"Id":0,"Namespace":-1},"Body":{}},{"TypeId":{"IdType":0,"Id":0,"Namespace":-1},"Body":{}},{"TypeId":{"IdType":0,"Id":0,"Namespace":-1},"Body":{}},{"TypeId":{"IdType":0,"Id":0,"Namespace":-1},"Body":{}},{"TypeId":{"IdType":0,"Id":0,"Namespace":-1},"Body":{}},{"TypeId":{"IdType":0,"Id":0,"Namespace":-1},"Body":{}}]}
+      Children:
+      - Name: 1
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: Acceso
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].Acceso"
+        - Name: Allarme
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].Allarme"
+        - Name: Cicli
+          Type: CODESYSTag
+          DataType: Int16
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].Cicli"
+        - Name: ComandoAccensione
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].ComandoAccensione"
+        - Name: Nome
+          Type: CODESYSTag
+          DataType: String
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].Nome"
+          - Name: MaximumLength
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 20
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+        - Name: Temperatura
+          Type: CODESYSTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].Temperatura"
+        - Name: TempoFunzionamento
+          Type: CODESYSTag
+          DataType: Duration
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[1].TempoFunzionamento"
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+      - Name: 2
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: Acceso
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].Acceso"
+        - Name: Allarme
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].Allarme"
+        - Name: Cicli
+          Type: CODESYSTag
+          DataType: Int16
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].Cicli"
+        - Name: ComandoAccensione
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].ComandoAccensione"
+        - Name: Nome
+          Type: CODESYSTag
+          DataType: String
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].Nome"
+          - Name: MaximumLength
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 20
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+        - Name: Temperatura
+          Type: CODESYSTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].Temperatura"
+        - Name: TempoFunzionamento
+          Type: CODESYSTag
+          DataType: Duration
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[2].TempoFunzionamento"
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+      - Name: 3
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: Acceso
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].Acceso"
+        - Name: Allarme
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].Allarme"
+        - Name: Cicli
+          Type: CODESYSTag
+          DataType: Int16
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].Cicli"
+        - Name: ComandoAccensione
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].ComandoAccensione"
+        - Name: Nome
+          Type: CODESYSTag
+          DataType: String
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].Nome"
+          - Name: MaximumLength
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 20
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+        - Name: Temperatura
+          Type: CODESYSTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].Temperatura"
+        - Name: TempoFunzionamento
+          Type: CODESYSTag
+          DataType: Duration
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[3].TempoFunzionamento"
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+      - Name: 4
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: Acceso
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].Acceso"
+        - Name: Allarme
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].Allarme"
+        - Name: Cicli
+          Type: CODESYSTag
+          DataType: Int16
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].Cicli"
+        - Name: ComandoAccensione
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].ComandoAccensione"
+        - Name: Nome
+          Type: CODESYSTag
+          DataType: String
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].Nome"
+          - Name: MaximumLength
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 20
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+        - Name: Temperatura
+          Type: CODESYSTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].Temperatura"
+        - Name: TempoFunzionamento
+          Type: CODESYSTag
+          DataType: Duration
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[4].TempoFunzionamento"
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+      - Name: 5
+        Type: TagStructure
+        DataType: Structure
+        Value: 
+         {
+          "Type": 22,
+          "Body": {
+           "TypeId": {
+            "IdType": 0,
+            "Id": 0,
+            "Namespace": -1
+           },
+           "Body":    {}
+          }
+         }
+        Children:
+        - Name: Acceso
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].Acceso"
+        - Name: Allarme
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].Allarme"
+        - Name: Cicli
+          Type: CODESYSTag
+          DataType: Int16
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].Cicli"
+        - Name: ComandoAccensione
+          Type: CODESYSTag
+          DataType: Boolean
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].ComandoAccensione"
+        - Name: Nome
+          Type: CODESYSTag
+          DataType: String
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].Nome"
+          - Name: MaximumLength
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 20
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
+        - Name: Temperatura
+          Type: CODESYSTag
+          DataType: Float
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].Temperatura"
+        - Name: TempoFunzionamento
+          Type: CODESYSTag
+          DataType: Duration
+          Children:
+          - Name: SymbolName
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Application.GVL.Motori[5].TempoFunzionamento"
+          - Name: Encoding
+            Type: BaseDataVariableType
+            DataType: Encoding
