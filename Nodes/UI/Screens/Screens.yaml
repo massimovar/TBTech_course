@@ -1606,7 +1606,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"opern dialog"}
+      Value: {"LocaleId":"en-US","Text":"open dialog"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
