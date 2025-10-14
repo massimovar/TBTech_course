@@ -9,3 +9,6 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - File: MyTags/MyTags.yaml
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Boolean

@@ -49,6 +49,7 @@ Children:
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Converters/Converters.yaml
+- File: Model/Model.yaml
 - File: Alarms/Alarms.yaml
 - File: Recipes/Recipes.yaml
 - File: Loggers/Loggers.yaml
@@ -62,4 +63,3 @@ Children:
 - File: System/System.yaml
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
-- File: Model/Model.yaml
