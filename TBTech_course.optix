@@ -29,16 +29,20 @@ Project:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
    Version: 1.0
+  8:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 124
-  Objects: 72
-  ObjectTypes: 1
-  Variables: 51
+  TotalNodeCount: 300
+  Objects: 106
+  ObjectTypes: 7
+  Variables: 187
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
-  References: 0
+  References: 7
   ReferenceTypes: 0
-  Files: 22
+  Files: 23
  Nodes:
  - File: Nodes/TBTech_course.yaml
