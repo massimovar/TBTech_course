@@ -2,212 +2,6 @@ Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
 Children:
-- Name: DigitalAlarm1
-  Id: g=bcf04301f9dcf7d3f6de807d87bf990d
-  Type: TBAlarm
-  Children:
-  - Class: Reference
-    Target: ns=21;i=81
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=82
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=83
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=130
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=135
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=132
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=146
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=148
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=150
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=152
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=154
-    Direction: Forward
-  - Name: NormalStateValue
-    Id: g=411d3197462db7455559d047cde68550
-    Type: BaseDataVariableType
-    DataType: Double
-  - Name: InputValue
-    Id: g=c89282494df07b3bf29275ee7b4b5560
-    Type: BaseDataVariableType
-    DataType: Double
-    Children:
-    - Name: DynamicLink
-      Id: g=076829095680c399fa6ef7ba3003f517
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[0]"
-  - Name: LastEvent
-    Id: g=a550f86f80151d760e8c0df82e531263
-    Type: BaseDataVariableType
-    DataType: BaseDataType
-    ValueRank: OneDimension
-    ArrayDimensions: [0]
-  - Name: Message
-    Id: g=294f5edeaaaad2ffca62d01afa3fa9db
-    Type: BaseDataVariableType
-    DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
-  - Name: Severity
-    Id: g=47e4070b18818fd1e2bd208bddd5f71d
-    Type: BaseDataVariableType
-    DataType: UInt16
-    Value: 1
-  - Name: Help
-    Id: g=d2d7f78158452df1d69a22ec8f4e7c2a
-    Type: BaseDataVariableType
-    DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"help 1"}
-- Name: DigitalAlarm2
-  Id: g=e3422ec1bf8c39388fd0b533e4a1b9ad
-  Type: TBAlarm
-  Children:
-  - Class: Reference
-    Target: ns=21;i=81
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=82
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=83
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=130
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=135
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=132
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=146
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=148
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=150
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=152
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=154
-    Direction: Forward
-  - Name: NormalStateValue
-    Id: g=cd904170bbe3c5cf23c392871295dbf8
-    Type: BaseDataVariableType
-    DataType: Double
-  - Name: InputValue
-    Id: g=d121927335292f53ae1ef9612d5321a9
-    Type: BaseDataVariableType
-    DataType: Double
-    Children:
-    - Name: DynamicLink
-      Id: g=c50f5bb10bc113d8db25682b15bdb4c8
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[1]"
-  - Name: LastEvent
-    Id: g=76167da4f7611536e840f7337abe9621
-    Type: BaseDataVariableType
-    DataType: BaseDataType
-    ValueRank: OneDimension
-    ArrayDimensions: [0]
-  - Name: Message
-    Id: g=4bcc6b59488d353d27084ab7798f4f76
-    Type: BaseDataVariableType
-    DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
-  - Name: Severity
-    Id: g=1898094c560d6254296351f37f2ffa6e
-    Type: BaseDataVariableType
-    DataType: UInt16
-    Value: 2
-  - Name: Help
-    Id: g=8a566560bc3ce9132818fbeee8576284
-    Type: BaseDataVariableType
-    DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"help 2"}
-- Name: DigitalAlarm3
-  Id: g=fbc5e5daf14313aaae64cc97da9e282b
-  Type: TBAlarm
-  Children:
-  - Class: Reference
-    Target: ns=21;i=81
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=82
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=83
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=130
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=135
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=132
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=146
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=148
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=150
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=152
-    Direction: Forward
-  - Class: Reference
-    Target: ns=21;i=154
-    Direction: Forward
-  - Name: NormalStateValue
-    Id: g=b2008a262ad7ab4a17cdeba959817d79
-    Type: BaseDataVariableType
-    DataType: Double
-  - Name: InputValue
-    Id: g=2c0353e94ffd43d847b6949f46744be3
-    Type: BaseDataVariableType
-    DataType: Double
-    Children:
-    - Name: DynamicLink
-      Id: g=660cb65099e9c9c528f2980d097e2c75
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[2]"
-  - Name: LastEvent
-    Id: g=4a497df11d1ab08ffe8a4e772e9ea8a7
-    Type: BaseDataVariableType
-    DataType: BaseDataType
-    ValueRank: OneDimension
-    ArrayDimensions: [0]
-  - Name: Help
-    Id: g=dd0fa3ae7edd8b89ffb86992eb266b2d
-    Type: BaseDataVariableType
-    DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"help 3"}
 - Name: TBAlarm
   Id: g=2cef2b0688c4aaa284742f4e747b6326
   Supertype: OffNormalAlarmController
@@ -278,12 +72,6 @@ Children:
     DataType: LocalizedText
     ModellingRule: Optional
     Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
-  - Name: Severity
-    Id: g=7140f2d4152db1c5773af3b30328169e
-    Type: BaseDataVariableType
-    DataType: UInt16
-    ModellingRule: Optional
-    Value: 3
   - Name: AutoAcknowledge
     Id: g=a5c158fa83cb1ef5040f26b5854018a8
     Type: BaseDataVariableType
@@ -304,3 +92,2412 @@ Children:
   - Class: Reference
     Type: GeneratesEvent
     Target: g=736ed4f59a691b433c0b9dff4ea3c73e
+  - Name: Severity
+    Id: g=efccd93f6467c30b67d71ea991691c77
+    Type: BaseDataVariableType
+    DataType: UInt16
+    ModellingRule: Optional
+    Value: 65535
+- Name: DigitalAlarm1
+  Id: g=d03733bea698434686f1a6ca571bcb2b
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=85228331736b1f62bbb395dee3e3cb3b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=782c6a96b569789e22ca31eb46d12143
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=058b3481adcb89d529410e37378c519e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=547e954e32297356b8600185fa4c5724
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=ac963784f2db306e1aad76501c9c4772
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=6d2bcbfa265f13c0344aca53f9fe0ab5
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 1"}
+  - Name: Severity
+    Id: g=18be38edae631f9dc0d762ce20030263
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: Message
+    Id: g=c57cf6bb372db3c7c253be1ce3ebe897
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=06fe9db4b44cb52a906a96484c7a5e4b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=c55ffa1f3aaff1a29cfa0ff88288d1e1
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=d5a688160bcb9c82ff5cac4cea61c274
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm2
+  Id: g=8595e14d7e764f40a1dc89ed6d00e59d
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=ea776defd908780c7c0923166d4e8cd1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=de60f271f5499d4763e74e27169e13bc
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b94c85691fd9ede5f92bb35032beb1b0
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=92e84e33187288407ae0f3933d5ee7ae
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=6a66b54cc0c014cdc44953728bfaecc3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=9c405a4a0a838c28f08eaf7cb1ca39ee
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 2"}
+  - Name: Severity
+    Id: g=d47f809049a7918f693fec95bc842eab
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: Message
+    Id: g=b9d114a51ba433a406750f17c8beaa45
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=508f35a3aef31427bf810c6b67f233c0
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=bfb3cbe0458d7130e33f3d277db8df96
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=e9c79f2b6252fa95319e404fc98aa75f
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm3
+  Id: g=290dba892aaf4c098ee854b653de64c6
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=f0cef71b1fa9e40b1b261f4aada0bed7
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=10b46ed5760555dfb6ae670c82e98277
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e9531397f4e7858a71bd6dc0363e0c33
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=a8faaf14ef4cfe36164b2226cdc766af
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=e0828368e33e031e23f6d07bf177dfce
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=0c992f41c851185a846ba37d7faf4b6a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 3"}
+  - Name: Severity
+    Id: g=098d30c61cd5eaf6828b3e9ff20920e7
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+  - Name: Message
+    Id: g=4f2b0c7b10ca1e6d206f9a2ba6124387
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=24a29631c2e3c9c84c0b27bec65ae87d
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=504728764f72c238ff46d92bedf1727c
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=c336f9283489ff5fbb207dccb3eef0d6
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm4
+  Id: g=90140b0b1c9041989a2736821762abea
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=08e4b0ffc162348e7ee8f79b145293fb
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=45c580efdd1b02c44981cca2888a6da0
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ba6440d58101e8a7cc6043e10d6febb8
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=c3f34a31b84207f8079f1b8b9412150f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=a4effa4a8d35244fb205182a3ce289e9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=96ae6eb70badc09d57702cfb920dd169
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 4"}
+  - Name: Severity
+    Id: g=2dfc40a1da8e459d0f3e12891a05c2d2
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+  - Name: Message
+    Id: g=552273edd5d3a1bb15991d4f9587d7f3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=1d99f6141b6a1a2ed22ac9cf177ddddd
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=d27611b59ba1786678818ba42bcab809
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=b78533ebabe7e819cac2d89686cf2615
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm5
+  Id: g=3ae3734e149f42bf9986c2d1b05962cb
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=084719912060af5924d16bfa7ad0900c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=e24fa6c57307cb8fa1170b0ea93c719a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2532d697e13f25224e0072e5d761749b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=34f81de5bea8978ceb80c4461cb9aa39
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=21ff260aa41fafcbe982a9c98cde33e0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=dd9077b0180ab88e623e056d9b8461ff
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 5"}
+  - Name: Severity
+    Id: g=a12416d1f1b02b91ae7ad29eea09941c
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 5
+  - Name: Message
+    Id: g=3f2790ab3f078151be49abfd467029ae
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=210b009fc0bdea07ff5cf8d6ec7dacdf
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=c9b089c21dd30eda9306e3ad881c0950
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=0b52daec3a7eb9c98d7b815e527bf9e4
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm6
+  Id: g=da37737b933c4b0f9d25ae5834b61da9
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=195bcad260dc27becb5476fbd0a30b3c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ebba59684ede0862954669cc70e0a958
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=51ff19888a769a749fd2b04a762ceea6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=21d271472b12d13ea8c8b58355564cf7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=b1110a0c1d4d0d20348d7af06c5aa757
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=1d359e229f5fd8f8e24c624267d41114
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 6"}
+  - Name: Severity
+    Id: g=d8649438fee646b7e6b4ad6da3fc2d7c
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 6
+  - Name: Message
+    Id: g=4eba5732513b3b0699bd251e50f7169c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=11f712f576469d00a65139d8ae30a617
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=b6558e205f10d66f9d752f91b2c0c8d9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=76584d9ebbcdbfa92aa9a4b6cddb4d4f
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm7
+  Id: g=67b749da44b24b75a9d7131808580d1a
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=cb37a2f281025dd5c79c21900093856f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=05327866b4bff257a7b64068f91f4719
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=76d1be384b795548b9d9795bc8ad42ff
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=5efe3d1fb306ced2db175821d2ba5302
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=44aad38b234ef1e9178389ed65ccdb72
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=faeab7890b3c30b6d11369db42e66b39
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 7"}
+  - Name: Severity
+    Id: g=3e114115d7ea4f1f9e8457e1411d6431
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 7
+  - Name: Message
+    Id: g=d7ee7f7a5b9e2b0e39e769ef7d2f1d21
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=a655fb617efb53beaf8d2b5ed665fbc6
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=2dc300d0c8ecd10eeea80d3462adbaf0
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=c79a6952dd4d84a2e242265ace6d3d05
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm8
+  Id: g=5445543f6a62463fb01f63828107b7ec
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=98f27bd211814cc654bacc9826ecbd13
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9dfd74ee4f9fee8dc3605e4b534eeff0
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=78607b4c47a7d511894b23afbea5701d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=e773a949d9abd4631928e0d07fe501e7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=265e3b77c282e81fb510ae7224398d1a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=2a9412f25b9e5f85e4b2cace4b7004df
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 8"}
+  - Name: Severity
+    Id: g=120be2ed513bb6ee32bef35f04faf2bb
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8
+  - Name: Message
+    Id: g=980b24e6e16acd0fed20aa9aa472555b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=9e041bd7d1cb0380f8bde07f5881868c
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=4d806e9bb801bdad5108d6ed9e23f6e3
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=05b474feacb0b490ef5f5801b11a2765
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm9
+  Id: g=81ae57cf64094a4587f0edf4999293bb
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=cb0e2e2cf39c6f111774f9c7425010da
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=c182c7424f3b21cd239b4aa9f82c2ec4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=53b24da4a0f5d633eae0327343a591f1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=1be459a67c9a85ee49f51b3e8e359ab3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=26f177c691fe854db37f2049b5a418be
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=24314089b710bbfb359602c5372cc0d3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 9"}
+  - Name: Severity
+    Id: g=4b9420e2c0e7e72a5f499bfdc01c9052
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 9
+  - Name: Message
+    Id: g=280b8c451be41b271388928d05711a43
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=5fb7adeb2502734f6d39de49bb57f65b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=cb59129674cd2849bdf0b08892e0e133
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=e3cb6ff9e0e3ef27edf9f05d57987edd
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm10
+  Id: g=5455fa246380483581dbda0948545bc8
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=c5ce658ccfc38e5061a83f8a13f2680a
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5584bff761fafadcf98da27548b4aaa0
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=5f7d81945269c398c8f841844756d838
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=b6eea6a05db7818a9264590411e7852c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=24dfbb8119552ce0367bbc19e03bc1ca
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=8f0c46ccc2b25f933397dce5b0282be0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 10"}
+  - Name: Severity
+    Id: g=96cba13120ea5c14e8f746840177acd6
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 10
+  - Name: Message
+    Id: g=e06452d707efd9a23c1583a399617bcf
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=83400ec9cf24fe4d34bd3c8c0af6ba92
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=abead14d7c8cf57501aafd84d9f48cb9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=85d8a0d3661a848f0381e1c20764f4a6
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm11
+  Id: g=2dd3b3004c3e457fa1bc232d8272b14b
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=d47b73c776917c06c87f69d03d167dbc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=f5c88e70b7bc807b32d4f1e329341eeb
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6fac5c9a4738d37e0454550cdbcc46ff
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=811613d901f1bdcc2afd1ec5d7484924
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=02bbffa50d8c11f69f86f802bd9619db
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=0d3c11bbc9dc447666426aafc20aa8bb
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 11"}
+  - Name: Severity
+    Id: g=43f94ce32425cfbfeb5b6d23511f4da4
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 11
+  - Name: Message
+    Id: g=ab2654c119783c37293cf3fa88d1a541
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=05a15725a2b30a71f9b4f0b6ec47f34d
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=bc306c2efb04941bcddd12b1610540f9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=47c0b4f0730ddac8348eac1f56537bcc
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm12
+  Id: g=729219b115674611a2bb54420035a337
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=1832703a7dbf3723124789fd286fbd71
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=0849aa33d4b7684cd5b59f28d3a5884e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ea969d15dfe1efef5f21b4d21452edda
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=b2c4c526f7b418fc3c442a519ae2fc61
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=1f323b470ff309178c1f55c049130cc6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=7952ed61152dd5697508a94a4e5b606d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 12"}
+  - Name: Severity
+    Id: g=648cb038577459d238152d215cb3e4ac
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 12
+  - Name: Message
+    Id: g=a9663c8526dcf2f9ec5f2518d0941f5c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=1c514c0a363acd81f94a74170d6ff74a
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=477833eb71c51e5ca70dd411b96e755e
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=12a19ab58b11dd97e0379b9844ea2834
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm13
+  Id: g=0bab7dbcf1dd41a9a3b0db34536007fc
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=a5b53c5eefff7df9e780ecfb1ca29640
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=214ecdc2c0546cb2a2b85c964134405b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e2b341d3c44182c16db9cbf0f01ab656
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=fef99898053c941e106fd29dc07ed8ef
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=564f912e75325f27d1bfbae72c8ca485
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=487bdee41aa411c1afb94abed33224ef
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 13"}
+  - Name: Severity
+    Id: g=5f9b51d77a76ad563ded3503b3d6c18a
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 13
+  - Name: Message
+    Id: g=f1876ad20f9b8230de0c9ce2ebdcefe3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=4943026cbef4b53df7ca3ae520980ba8
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=3c1e24073b5870bf50911dae2eca575b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=84a80f8fc0d36f3e6107baaa548e86d8
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm14
+  Id: g=c8ba8f20e39848c394160a988187d91b
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=8021cb88806579d286672fe568bf16d1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=0fabee800ad62ca9ae8522f2d64b4cf6
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=772a6a128ca05351bf27028c0eb6181e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=f4938b8a4c05e8ccd51c1433fb445062
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=87db710230c08d2497060d5b3770a83a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=0e7d75f036a309879a8bbbda0e8a4650
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 14"}
+  - Name: Severity
+    Id: g=a66b061efea23b79737c704d4ca3d2d0
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 14
+  - Name: Message
+    Id: g=cb5d3ab5e50622e6cb614b4cd0b7820d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=1d873edf1b8c6b1b3f30ec6887787be3
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=f8a0becae734ccabd2cf3e6e2538e830
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=4f0738c5b905cbcd98786d8bea3ca629
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm15
+  Id: g=58e5c151028f4b4b9c4d6b58c8079202
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=ad7947516048328fabeadf3d844e7f77
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=f5f9b7753fe156c837f9052012617aa4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=fe0b53422fdfe2d5198b00017a96fac7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=f3dcfdb2b8ac6161454c6e8cbbf406f1
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=fe0726efc28398b9c8776c21ca0c4d55
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=7b4f1cef9c46753aea3657af5524a5de
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 15"}
+  - Name: Severity
+    Id: g=43e2575bbdb0b41f1f0801d08b3d25ff
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 15
+  - Name: Message
+    Id: g=565bd90e78de750f4f3b81d0cb96b12a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=4cbdcd4d052dd74c978069b3b28e31a4
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=322fc01a12f8bafc9485e25da81a1e50
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=c24aff70d22f66a8c5520449de6bf0fa
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm16
+  Id: g=83e09f2d9e9f427381ae7e3b560fe1f7
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=7964dee65ab66163458c7ec3eff3331d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=1d7f5317fc81b9bd72ff49d8e7a29e2a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=42df0ed4625e8235fa66cfc6899e1703
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=77ef3f6bab3a7c98570045af583a06b9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=1b9f22d881c903d237a097c84bcb8bbf
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=490507aa5a63292710827485dfce7a8d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 16"}
+  - Name: Severity
+    Id: g=f7836d2fdbf95c19faaffc661ed46956
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 16
+  - Name: Message
+    Id: g=447f3a50bc450f321a0166dc9ee3ff3a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=3c22053d221d6ef5eaecb5a1c6e16420
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=32b03d50cd6a7c23893cada4ea05bb8b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=2bba8b2f5fddba181a4d5e9a460c615a
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm17
+  Id: g=c94bcaf6a044491897aa87853574baef
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=6e4bc1dd852e4d8965ff7be695dd3b0b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=728b36e91c9a411638a255135658a5cc
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8af65c28062704f86919dbee8aa5a431
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=be40fc806310ffca7e58f329627c04c0
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=9d984933a351f58a68385873a5578e9f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=1ccb7dc9c3979189f025c62bbc5b3362
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 17"}
+  - Name: Severity
+    Id: g=d051fad518f047a2e7404a884a2dbf62
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 17
+  - Name: Message
+    Id: g=b3681f7f415cf030e64636a9dbe1895f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=53bc112fcce4493f822d1e974ca3a9bb
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=ab2d0d1208ecffa0a1744785d76c4c98
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=7fe2534b2c8c7c907d9a7357d149e743
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm18
+  Id: g=b4259f1536324c7ba2c597654c88e351
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=1242172487b58f35d288c9ad2b720d02
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=910e7ec8fdb5552fd4894c321f6533a5
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3ead84ed6481c24402cda38a62825b08
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=11c22996c3124ddb1ff5b6b9ee15604b
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=4667bf9abbfbddef631aa59be852bada
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=4055a2145e8c2cac3a944f9ed4063432
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 18"}
+  - Name: Severity
+    Id: g=e51e27bd4b03957fa6e51fd5bc0c889e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 18
+  - Name: Message
+    Id: g=53df2247e391f18473948d58e622a4d7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=0a4f0006680e60d432b1993904cc737b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=23bbae6712715fa5e26c8fc2290f05b6
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=cb5e388799ec14f95a30e1560a88c1df
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm19
+  Id: g=81428ccc6b13422b8fa4d3d2a7c332ee
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=bd7c60f08123976fa24b1d69e55a7f6a
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a542f8606ca673ae6fda55cbee0f906c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=de999dd6b98967efd82dffc71681c349
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=dfc10e8afc3d3efdcb69b3cbe2a3693c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=63a8823ec52831cf5a08c6bbf62ebc5f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=3c6bd16cafb734f1d8a83293caddd7e9
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 19"}
+  - Name: Severity
+    Id: g=967822676a05882fde63046169822b12
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 19
+  - Name: Message
+    Id: g=5bcc7ea159036f73aa24a570d6790786
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=f36768c948007e9a1cd322a16614dd86
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=5fe0b7bc21c3f8874f71cf2b595f4e1f
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=6d4d0bdba830caa6887871b3c2f8bb62
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm20
+  Id: g=3ee91847f8414f57b5ec80e84a569c16
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=25fc67496fc4c07e9eecbc08817d2141
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a66dbb1eef2fc88f54e2b66ca660b7fc
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3d3b2af42f6d48bcc48151642ead4d20
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=7110e0fd861ba3838e1450736787404a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=023468f3d5afe165c9fc4f964b184c5b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=0f3fe90133b2c2d61ba3a6980244441f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 20"}
+  - Name: Severity
+    Id: g=ded9e3b6ee558626cc9ac2b3622645ba
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 20
+  - Name: Message
+    Id: g=382c57e37f17d0a710c58c02345af0b2
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=2f3e552c1f2a9bcfd39ea2cf9de7ec60
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=0742a34f5789ac666bf085f60bf7493b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=27b666b500edeceddbe5bb2733a221f3
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm21
+  Id: g=bf2f4502cd6740358b97d989da29f00c
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=08e9e15d9c325e398433c0776163b106
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=54cd34d01e718bde1f686124e3589b41
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f8e320e6d50b0189f4e1048b279064dd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=5ffe77712354a0ea4f2b4b4b47d5b569
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=335391478aa2f52be9b02c05d6fffe82
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=25a296a8fbd6beecd364835142b15dd1
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 21"}
+  - Name: Severity
+    Id: g=8d8716001c8283f2e84befe3350a2155
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 21
+  - Name: Message
+    Id: g=217619f5cd020711b84fe8f20d04fd94
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=bce178e08fe8aa39a889c5c57e96dd8a
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=1a74a18b5115790abf40049fb74b74bd
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=3f0c2cb6ea9ea6d55e0f4eaa9eb26af2
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm22
+  Id: g=a3c0aad8edd446949f0176919162fc41
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=5a5ee730f8f89c76dabad2b6d71dfa9d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=62da4b8fe9b8ca9de4f96e4840c780e4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3e2fdaeb547aaafcea1df10a40276561
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=e2a9b0e78495335202926d66ada3aaa1
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=08c3b65ef1d3b80597c4e10a44523713
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=d3a2b7f1e3f6d8ce3aa7f55c033559d8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 22"}
+  - Name: Severity
+    Id: g=a57d1867756cf4ca8728cddee6f0a2de
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 22
+  - Name: Message
+    Id: g=4f476fc5daae31f098cbcaf4d6e69186
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=f0a3a117aecbb5f1109abe3861e611d8
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=5a624de7c1d001a8d670ea1889e30625
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=a7d3d42003aa8942e86f0f04bd0bd2b5
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm23
+  Id: g=d3df21101bbd4bc3b01ac627f083b4f9
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=b58159234e4d014482646c73522370f2
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6f09c0831a57068916b830d0415f1370
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=91196c1e5cb81aef271e930a37e62668
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=a0e26cba41fc25633380b0b239ddaeb4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=5d17b34d2548b33841c64642150d67d5
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=4e2954930d0539b6e11a2a835197a009
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 23"}
+  - Name: Severity
+    Id: g=5c1db59fc3962ea51d3298e3da0df166
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 23
+  - Name: Message
+    Id: g=2b0ea99778f65bcbc81b9a183e79a3a6
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=0ab3ba36e5c16404f2ac2b981cdf6cac
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=5f6eeba34321d3062d73152b303b6fce
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=f17d1d8fbbd9b227a5cc84d1c1d1ac16
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm24
+  Id: g=1ec5ab7ac5a541efb16106fc5cb3016e
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=7787d42da9e84c6c0288e08efe0ab2df
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ce7d57514f162b042753ebeaff4f45ce
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=9972f6a75ce668359e4ad88a8b80bfa0
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=15e2d76135fce186c5a40a2e824bc324
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=b3d8cfeb6dd2d46fb68966a13a1c5074
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=9935ae8372cf05a46fea1723d641eb19
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 24"}
+  - Name: Severity
+    Id: g=97ef2f3d1c433fb7b2c3564970fa93fb
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 24
+  - Name: Message
+    Id: g=0a1df73399dc47666d9e88aaf77d80f8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=7b34d5475637e581a36728850657ebf1
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=933d41c205a53c06d1db97a226baa23b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=9b67c9a30b9006ba34c6128c45f36746
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm25
+  Id: g=0ce0e625210c4e779af6b62a8bbdaebb
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=090ee263d4de7a4af379e975d1e4a561
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6db7f4e1dbba083e53abf42e9a024f94
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=dab45c3bf0f7347c6eca09306be8d68d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+      Children:
+      - Name: Mode
+        Id: g=b8163e8325eb43d3ecc54f4ff2ac2967
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=8df94bcb820173ebc7c81f59f2b6d59c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=e0a1a554da51976659b8bb01a833bd89
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 25"}
+  - Name: Severity
+    Id: g=b9b05816eb25d26f9ff456d0f8342038
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 25
+  - Name: Message
+    Id: g=f29d3194ebfba071a3fbfcc6f89a2840
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: MaxTimeShelved
+    Id: g=1a59bcb7baf5758d8c5b1329254119c4
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=37a1db9ce59b97c7b65b4f9bbcee2f3e
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=310cdf052b34bc742395bdb0660d9ab1
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm26
+  Id: g=23237b379cc745c7887927d623ab9595
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=cced9db801f6da6523ccc48b17d1a2a2
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5d5a11eeceb1015289f470196b06c95a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ca757205dd9ca9d650d4652e16ceebb6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+      Children:
+      - Name: Mode
+        Id: g=1431eb926e732c6416f6289b8b40cf72
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=aa1fe30f8aaf831c78751f697230c180
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=3b61145bce3a106f4f2b212c6cf1f6eb
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 26"}
+  - Name: Severity
+    Id: g=29f02ffb735350501ba67c4eb753cb10
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 26
+  - Name: Message
+    Id: g=f0afe3c6918f627d8e1277a146aefadb
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: MaxTimeShelved
+    Id: g=069d39b81b764b1d350088d77c6a72dc
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=0184e84c695a87fe8cdd38d60c1e9c34
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=078f3cef7e7fb98746c6d098500ef995
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm27
+  Id: g=dcd6ba8c8f7f470e90d94591941fd338
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=437a25f4c3ee526815b14e445746449d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=4e0ee16b8d7e25ed0d2f97f437681cfe
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=df08d07b403de91b58ba25d487f0c25b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=0b8ede733ccf6088efcfeb74e7ce7d49
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+  - Name: LastEvent
+    Id: g=a6b700d3bb0eb61a7e25cf3a54c11bc8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=a277358755ce09ecdb8bebfed2c0d83e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 27"}
+  - Name: Severity
+    Id: g=b8b382a895ac5abbbaa45b55abad9a31
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 27
+  - Name: Message
+    Id: g=4ce09eace9724816213e5369dd8b592a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: MaxTimeShelved
+    Id: g=39133d41c6499f8deefcaa6b1ea8316e
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=08e0eb9e7ab63a9010ae6416e4e86742
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=2b043d2c0e5503f15c75cbb4014ed43c
+    Type: BaseDataVariableType
+    DataType: Boolean

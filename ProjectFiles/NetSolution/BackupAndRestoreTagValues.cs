@@ -11,6 +11,9 @@ using System.Globalization;
 using System.Reflection;
 using FTOptix.HMIProject;
 using FTOptix.Alarm;
+using FTOptix.SQLiteStore;
+using FTOptix.Store;
+using FTOptix.EventLogger;
 #endregion
 
 public class BackupAndRestoreTagValues : BaseNetLogic
