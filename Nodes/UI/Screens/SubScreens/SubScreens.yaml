@@ -5,6 +5,1096 @@ Children:
   Id: g=2a7342aae88439bc975b4df2d9fd1f0b
   Supertype: Screen
   ReferenceType: HasComponent
+  Children:
+  - Name: Switch1
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[0]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: Switch2
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[1]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: Switch3
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/TBTech_course/Model/MyAlarmsTags/MyAlarmsBits[2]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: AlarmBanner1
+    Type: RowLayout
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 371.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: CurrentAlarmText
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"####"}
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0:F} - {1}"}
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "{0}+{1}"
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../AlarmBannerLogic/CurrentDisplayedAlarm/Time"
+              - Name: ns=2;Source1
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../AlarmBannerLogic/CurrentDisplayedAlarm/LocalTime"
+          - Name: Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../AlarmBannerLogic/CurrentDisplayedAlarm/Message"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: Elide
+        Type: BaseDataVariableType
+        DataType: ElideEnum
+        ModellingRule: Optional
+        Value: 3
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#ff0000"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} > 0"
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../AlarmBannerLogic/AlarmCount"
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        Value: 100.0
+      - Name: Blink
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../BlinkEnabled"
+    - Name: AlarmBannerLogic
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: NextAlarm
+      - Class: Method
+        Name: PreviousAlarm
+      - Name: AlarmCount
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: CurrentDisplayedAlarm
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
+      - Name: CurrentDisplayedAlarmIndex
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: RotationTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../RotationTime"
+    - Name: RotationTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:05.0000000"
+    - Name: BlinkEnabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: PreviousAlarm
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"<"}
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: EventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+                Value: 2
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../AlarmBannerLogic@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "PreviousAlarm"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} > 1"
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../AlarmBannerLogic/AlarmCount"
+    - Name: NextAlarm
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":">"}
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: EventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+                Value: 2
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../AlarmBannerLogic@NodeId"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "NextAlarm"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} > 1"
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../AlarmBannerLogic/AlarmCount"
+    - Name: ns=4;LibraryReference
+      Type: ObjectLibraryReference
+      DataType: ObjectLibraryReferenceDataType
+      ModellingRule: None
+      Value: 
+       {
+        "TypeId": {
+         "Id": 72,
+         "Namespace": 4
+        },
+        "Body": {
+         "libraryGuid": "de905a58759b4ff38bbb66c9d44c67ad",
+         "objectGuid": "2d5f0ddede9d7ae51a17818121237134",
+         "objectVersion": 1,
+         "highestIgnoredVersion": 0
+        }
+       }
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+  - Name: AlarmGrid1
+    Type: Panel
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1155.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 320.0
+    - Name: AlarmGridLogic
+      Type: NetLogic
+    - Name: AlarmsDataGrid
+      Type: DataGrid
+      Children:
+      - Class: Reference
+        Target: ns=3;i=504
+        Direction: Forward
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/RetainedAlarms/LocalizedAlarms@Pointer"
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":7,"TextId":"Timestamp"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 130.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Time"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0} + {1}"
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}/LocalTime"
+                - Name: Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Item}/Time"
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: Name
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":7,"TextId":"Name"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 150.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 1
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}@BrowseName"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: CollegamentoDinamico
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}@BrowseName"
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: Message
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":7,"TextId":"Message"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 1
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Message"
+          - Name: DataItemTemplate
+            Type: DataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Message"
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: Help
+          Type: DataGridColumn
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Help"}
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 80.0
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 1
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 2
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/ActiveState/Id"
+          - Name: DataItemTemplate
+            Type: DataGridImageItemTemplate
+            Children:
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=7;%PROJECTDIR%/help-web-button.png"
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: 16.0
+            - Name: Height
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: 16.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1197.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 236.0
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: SortOrder
+        Type: BaseDataVariableType
+        DataType: SortOrderEnum
+        Value: 1
+      - Name: SortColumn
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Children:
+        - Name: CollegamentoDinamico
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../Columns/Timestamp@NodeId"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 75.0
+      - Name: RowBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+        Children:
+        - Name: KeyValueConverter1
+          Type: ValueMapConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}/Severity"
+          - Name: ns=2;Pairs
+            Type: BaseObjectType
+            ModellingRule: None
+            Children:
+            - Name: Pair
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: UInt16
+                ModellingRule: None
+                Value: 1
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: None
+                Value: "#0000ff"
+            - Name: Pair1
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: UInt16
+                ModellingRule: None
+                Value: 2
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: None
+                Value: "#ffff00"
+            - Name: Pair2
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: UInt16
+                ModellingRule: None
+                Value: 3
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: None
+                Value: "#ff0000"
+      - Name: RowTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+        Children:
+        - Name: KeyValueConverter1
+          Type: ValueMapConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}/Severity"
+          - Name: ns=2;Pairs
+            Type: BaseObjectType
+            Children:
+            - Name: Pair
+              Type: ValueMapPair
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 1
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#ffffff"
+            - Name: Pair1
+              Type: ValueMapPair
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 2
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#000000"
+            - Name: Pair2
+              Type: ValueMapPair
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 3
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#000000"
+      - Name: UserSelectionChangedHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/UICommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "OpenDialog"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: Dialog
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
+                Value: "/Objects/TBTech_course/UI/MyDialogs/TBAlarmHelpDialog"
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
+                Children:
+                - Name: DynamicLink_0
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../SelectedItem@NodeId"
+              - Name: ParentItem
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":3,"TextId":"OpenDialogParentItemDescription"}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../..@NodeId"
+            - Name: OutputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: DialogNodeId
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogNodeIdDescription"}
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/VariableCommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Set"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: VariableToModify
+                Type: BaseDataVariableType
+                DataType: VariablePointer
+                Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../SelectedItem@Pointer@NodeId"
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+              - Name: ArrayIndex
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: UserSelectionChanged
+          Children:
+          - Name: SelectedItem
+            Type: BaseDataVariableType
+            DataType: NodeId
+          - Name: SelectedValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: ns=4;LibraryReference
+      Type: ObjectLibraryReference
+      DataType: ObjectLibraryReferenceDataType
+      ModellingRule: None
+      Value: 
+       {
+        "TypeId": {
+         "Id": 72,
+         "Namespace": 4
+        },
+        "Body": {
+         "libraryGuid": "de905a58759b4ff38bbb66c9d44c67ad",
+         "objectGuid": "bb3c3a1d0afca187be5aa3d8eabef6dc",
+         "objectVersion": 1,
+         "highestIgnoredVersion": 0
+        }
+       }
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../AlarmBanner1/AlarmBannerLogic/AlarmCount"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 480.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 19.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
 - Name: AlarmsHistory
   Id: g=6c7c6962aff5148a03c931451568605d
   Supertype: Screen

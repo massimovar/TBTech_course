@@ -9,9 +9,23 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [2,2],
+    "Dimensions": [16,2],
     "Body": [
      "","en-US",
-     "Connected to Station:","Connected to Station:"
+     "Connected to Station:","Connected to Station:",
+     "Timestamp","Timestamp",
+     "TimedShelve","Timed Shelve",
+     "Acknowledge","Acknowledge",
+     "Acknowledge All","Acknowledge All",
+     "Active","Active",
+     "Confirm","Confirm",
+     "OneShotShelve","One-Shot Shelve",
+     "Confirm All","Confirm All",
+     "Name","Name",
+     "SourceName","Source Variable",
+     "Message","Message",
+     "Acked","Acked",
+     "Confirmed","Confirmed",
+     "Severity","Severity"
     ]
    }

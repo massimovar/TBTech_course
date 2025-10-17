@@ -1,3 +1,306 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=bcf04301f9dcf7d3f6de807d87bf990d
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=411d3197462db7455559d047cde68550
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=c89282494df07b3bf29275ee7b4b5560
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=076829095680c399fa6ef7ba3003f517
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[0]"
+  - Name: LastEvent
+    Id: g=a550f86f80151d760e8c0df82e531263
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=294f5edeaaaad2ffca62d01afa3fa9db
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 1 is on"}
+  - Name: Severity
+    Id: g=47e4070b18818fd1e2bd208bddd5f71d
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: Help
+    Id: g=d2d7f78158452df1d69a22ec8f4e7c2a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 1"}
+- Name: DigitalAlarm2
+  Id: g=e3422ec1bf8c39388fd0b533e4a1b9ad
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=cd904170bbe3c5cf23c392871295dbf8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d121927335292f53ae1ef9612d5321a9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c50f5bb10bc113d8db25682b15bdb4c8
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[1]"
+  - Name: LastEvent
+    Id: g=76167da4f7611536e840f7337abe9621
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=4bcc6b59488d353d27084ab7798f4f76
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarm 2 is on"}
+  - Name: Severity
+    Id: g=1898094c560d6254296351f37f2ffa6e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: Help
+    Id: g=8a566560bc3ce9132818fbeee8576284
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 2"}
+- Name: DigitalAlarm3
+  Id: g=fbc5e5daf14313aaae64cc97da9e282b
+  Type: TBAlarm
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=b2008a262ad7ab4a17cdeba959817d79
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2c0353e94ffd43d847b6949f46744be3
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=660cb65099e9c9c528f2980d097e2c75
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[2]"
+  - Name: LastEvent
+    Id: g=4a497df11d1ab08ffe8a4e772e9ea8a7
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Help
+    Id: g=dd0fa3ae7edd8b89ffb86992eb266b2d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"help 3"}
+- Name: TBAlarm
+  Id: g=2cef2b0688c4aaa284742f4e747b6326
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=67e2fd644fdaa963e33fe357c0834499
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6f7703b03256364b1d62ba336ec37520
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=56d0b32093b201471b6d259d75e7407b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/MyAlarmsTags/MyAlarmsBits[2]"
+      Children:
+      - Name: Mode
+        Id: g=c51c42909dd4183b526bf4ff498c70e8
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: LastEvent
+    Id: g=d6fabe3c9dd65478e7b313ffdf977443
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=8fa6f7a9a1cb90e5be1484332a5237e7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+    Value: {"LocaleId":"en-US","Text":"Alarm 3 is on"}
+  - Name: Severity
+    Id: g=7140f2d4152db1c5773af3b30328169e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    ModellingRule: Optional
+    Value: 3
+  - Name: AutoAcknowledge
+    Id: g=a5c158fa83cb1ef5040f26b5854018a8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: AutoConfirm
+    Id: g=6f37601e3f3cb98fbc985fa5e730e85c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Help
+    Id: g=1ece57663130adc55b5243aabd0b9574
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"not set"}
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=736ed4f59a691b433c0b9dff4ea3c73e

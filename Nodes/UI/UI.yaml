@@ -1123,7 +1123,7 @@ Children:
       - Name: Panel
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/TBTech_course/UI/Screens/Sandbox"
+        Value: "/Objects/TBTech_course/UI/Screens/Alarms"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -1195,7 +1195,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
-              Value: "/Objects/TBTech_course/UI/MyDialogs/MyFirstDialog"
+              Value: "/Objects/TBTech_course/UI/MyDialogs/TBDialog"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId

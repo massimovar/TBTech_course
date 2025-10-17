@@ -81,16 +81,24 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  21:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.0
+  22:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 1475
-  Objects: 329
-  ObjectTypes: 11
-  Variables: 1132
+  TotalNodeCount: 1866
+  Objects: 401
+  ObjectTypes: 14
+  Variables: 1446
   VariableTypes: 0
   DataTypes: 0
-  Methods: 3
-  References: 14
+  Methods: 5
+  References: 67
   ReferenceTypes: 0
-  Files: 32
+  Files: 34
  Nodes:
  - File: Nodes/TBTech_course.yaml

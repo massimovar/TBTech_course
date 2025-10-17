@@ -1,0 +1,8 @@
+Name: MyAlarmsTags
+Type: FolderType
+Children:
+- Name: MyAlarmsBits
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [3]

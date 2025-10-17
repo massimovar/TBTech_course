@@ -1,7 +1,7 @@
 Name: MyDialogs
 Type: FolderType
 Children:
-- Name: MyFirstDialog
+- Name: TBDialog
   Id: g=f989e05a9999d9e7c520bb8b6fc10ac6
   Supertype: Dialog
   ReferenceType: HasComponent
@@ -27,8 +27,8 @@ Children:
       DataType: Color
       ModellingRule: Optional
       Value: "#d9d9d9"
-    - Name: header
-      Type: Rectangle
+    - Name: VerticalLayout1
+      Type: ColumnLayout
       Children:
       - Name: Width
         Type: BaseVariableType
@@ -45,118 +45,297 @@ Children:
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 3
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: "#808080"
-      - Name: MoveTarget
-        Type: NodePointer
-        DataType: NodeId
+        Value: 3
+      - Name: header
+        Type: Rectangle
         Children:
-        - Name: Kind
-          Type: PropertyType
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#808080"
+        - Name: MoveTarget
+          Type: NodePointer
           DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../..@NodeId"
-    - Name: Button1
-      Type: Button
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"X"}
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-        Value: 1
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 50.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 50.0
-      - Name: Style
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "Transparent"
-      - Name: FontSize
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: MouseClickEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
           Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"X"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#ffffff"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "Transparent"
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 25.0
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
             Children:
-            - Name: ns=2;ObjectPointer
-              Type: NodePointer
+            - Name: ListenEventType
+              Type: PropertyType
               DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
               Children:
-              - Name: Kind
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../..@NodeId"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Close"
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../..@NodeId"
-                Children:
-                - Name: Mode
-                  Type: BaseVariableType
-                  DataType: DynamicLinkMode
-                  ModellingRule: Optional
-                  Value: 2
-            - Name: ns=2;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Close"
-        - Name: EventArguments
-          Type: MouseClickEvent
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+- Name: TBAlarmHelpDialog
+  Id: g=dbba0b1e71336c09c1cfda9524624352
+  Supertype: TBDialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+    Direction: Forward
+  - Name: Screen1
+    Type: Screen
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: header
+        Type: Rectangle
+        Children:
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
           Children:
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
+          - Name: Kind
             Type: PropertyType
             DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
             DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{AlarmInstance}@BrowseName"
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#ffffff"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"X"}
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#ffffff"
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../..@NodeId"
+                - Name: Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Close"
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{AlarmInstance}/Help"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: WordWrap
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+  - Name: AlarmInstance
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/TBTech_course/Alarms/TBAlarm"
