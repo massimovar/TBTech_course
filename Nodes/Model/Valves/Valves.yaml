@@ -1,0 +1,56 @@
+Name: Valves
+Id: g=84d26f32bdf641279700e244122ef6a7
+Type: FolderType
+Children:
+- Name: Valve1
+  Id: g=46c0875dde4a6fd913d6c3bbbb091b93
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temp
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 10.0
+- Name: Valve2
+  Id: g=a38bc423f1e88a5c5b97568d33bfff0d
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temp
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 20.0
+- Name: Valve3
+  Id: g=6c473562d8ccff44faf30398adb94321
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temp
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Valve4
+  Id: g=a9adb20b6596647699dd0afd3cec85d7
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temp
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Valve5
+  Id: g=0b9e7427d3a40126574ff8139fafe81c
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temp
+    Type: BaseDataVariableType
+    DataType: Float

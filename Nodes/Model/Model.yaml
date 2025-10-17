@@ -12,3 +12,14 @@ Children:
 - Name: Variable3
   Type: BaseDataVariableType
   DataType: Boolean
+- File: Valves/Valves.yaml
+- Name: Valve
+  Id: g=182f39d3e6ca3290356c0ca8d9bae332
+  Supertype: BaseObjectType
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temp
+    Type: BaseDataVariableType
+    DataType: Float

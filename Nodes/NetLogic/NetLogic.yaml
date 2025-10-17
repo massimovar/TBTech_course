@@ -38,3 +38,51 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: BackupAndRestoreTagValues
+  Id: g=3c41cb7e84beb526c3cc273041ea842d
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: BackupTagValues
+  - Class: Method
+    Name: RestoreTagValues
+  - Name: ParentNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TBTech_course/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/temp/tags.csv"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Timeout
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:30.0000000"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "0edb46c158d6109c126a7edb68234260",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
