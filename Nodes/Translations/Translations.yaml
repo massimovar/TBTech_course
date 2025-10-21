@@ -9,23 +9,60 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [16,2],
+    "Dimensions": [38,3],
     "Body": [
-     "","en-US",
-     "Connected to Station:","Connected to Station:",
-     "Timestamp","Timestamp",
-     "TimedShelve","Timed Shelve",
-     "Acknowledge","Acknowledge",
-     "Acknowledge All","Acknowledge All",
-     "Active","Active",
-     "Confirm","Confirm",
-     "OneShotShelve","One-Shot Shelve",
-     "Confirm All","Confirm All",
-     "Name","Name",
-     "SourceName","Source Variable",
-     "Message","Message",
-     "Acked","Acked",
-     "Confirmed","Confirmed",
-     "Severity","Severity"
+     "","en-US","it-IT",
+     "Connected to Station:","Connected to Station:","",
+     "Timestamp","Timestamp","",
+     "TimedShelve","Timed Shelve","",
+     "Acknowledge","Acknowledge","",
+     "Acknowledge All","Acknowledge All","",
+     "Active","Active","",
+     "Confirm","Confirm","",
+     "OneShotShelve","One-Shot Shelve","",
+     "Confirm All","Confirm All","",
+     "Name","Name","",
+     "SourceName","Source Variable","",
+     "Message","Message","",
+     "Acked","Acked","",
+     "Confirmed","Confirmed","",
+     "Severity","Severity","",
+     "Loading","Loading","",
+     "Old password","Old password","",
+     "LoginFormPasswordExpired","Password expired","",
+     "Login","Login","",
+     "New password","New password","",
+     "Password","Password","",
+     "Confirm password","Confirm password","",
+     "Change password","Change password","",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.","",
+     "Current User:","Current User:","",
+     "Logout","Logout","",
+     "ChangePasswordFormSuccessMessage","Password changed successfully","",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password","",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used","",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently","",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short","",
+     "ChangePasswordFormUserNotFoundMessage","User not found","",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation","",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match","",
+     "LoginFormLoginSuccessful","Login successful","",
+     "LoginFormAuthenticationFailed","Authentication failed","",
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user",""
+    ]
+   }
+- Name: LocalizationDictionary2
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [3,3],
+    "Body": [
+     "","en-US","it-IT",
+     "_hi","Hi!","Ciao!",
+     "motor","Motor!","Motore!"
     ]
    }

@@ -2,7 +2,6 @@ Name: MyAlarmsTags
 Type: FolderType
 Children:
 - Name: MyAlarmsBits
-  Id: g=7f1f002e67879eee5551fd53fb45c223
   Type: BaseDataVariableType
   DataType: Boolean
   ValueRank: OneDimension

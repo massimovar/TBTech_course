@@ -1,3 +1,16 @@
 Name: Groups
 Id: g=33ac98afcbbcd645bc8146197074cc43
 Type: GroupsCategoryFolder
+Children:
+- Name: Commissioners
+  Id: g=3c3f188452c48e9e3e6f394aedb7c3c6
+  Type: GroupType
+- Name: Superusers
+  Id: g=dbdcdc763ea4065a32905ebbf130827f
+  Type: GroupType
+- Name: Maintainers
+  Id: g=4e3a2084163d65bd95733a7e8575ea96
+  Type: GroupType
+- Name: Operators
+  Id: g=31f60300bbe9514f251043df3638b012
+  Type: GroupType
