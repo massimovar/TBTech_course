@@ -10,6 +10,7 @@ using FTOptix.CoreBase;
 using FTOptix.Core;
 using FTOptix.Retentivity;
 using FTOptix.System;
+using FTOptix.Recipe;
 #endregion
 
 public class LoginChangePasswordFormOutputMessageLogic : BaseNetLogic

@@ -1,0 +1,30 @@
+Name: MyRecipeTags
+Id: g=2118436ccf625a0d9dbf8735e117d75d
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    DisplayName: {"NamespaceIndex":0,"TextId":"EngineeringUnitsDisplayName"}
+    Children:
+    - Name: UnitId
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 4410708
+    - Name: DisplayName
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+    - Name: Description
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "not set"

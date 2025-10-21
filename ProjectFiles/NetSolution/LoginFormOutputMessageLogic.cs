@@ -8,6 +8,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.System;
+using FTOptix.Recipe;
 #endregion
 
 public class LoginFormOutputMessageLogic : BaseNetLogic

@@ -113,16 +113,24 @@ Project:
    Uri: 'urn:FTOptix:EventLogger:Net'
    Module: FTOptix.EventLogger.Net
    Version: 1.0
+  29:
+   Uri: 'urn:FTOptix:Recipe'
+   Module: FTOptix.Recipe
+   Version: 1.0
+  30:
+   Uri: 'urn:FTOptix:Recipe:Net'
+   Module: FTOptix.Recipe.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 3132
-  Objects: 621
-  ObjectTypes: 23
-  Variables: 2476
+  TotalNodeCount: 3811
+  Objects: 752
+  ObjectTypes: 24
+  Variables: 3013
   VariableTypes: 0
   DataTypes: 0
-  Methods: 12
-  References: 374
+  Methods: 22
+  References: 392
   ReferenceTypes: 0
-  Files: 36
+  Files: 37
  Nodes:
  - File: Nodes/TBTech_course.yaml

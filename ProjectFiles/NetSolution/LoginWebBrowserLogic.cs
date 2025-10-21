@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.Text;
 using FTOptix.System;
+using FTOptix.Recipe;
 #endregion
 
 public class LoginWebBrowserLogic : BaseNetLogic

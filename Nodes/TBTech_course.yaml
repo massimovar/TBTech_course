@@ -16,6 +16,12 @@ Children:
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
+  - Name: MeasurementSystemMap
+    Type: BaseDataVariableType
+    DataType: MeasurementSystemMapItem
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":235,"Namespace":1},"Body":{"From":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":5066068,"NamespaceIndex":0}},"InternationalSystemOfUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":5066068,"NamespaceIndex":0}},"USCustomarySystem":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4607828,"NamespaceIndex":0}},"BritishImperialUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4607828,"NamespaceIndex":0}}}}]
 - Name: Authentication
   Type: PropertyGroup
   Children:
@@ -67,3 +73,12 @@ Children:
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
 - File: AlarmTypes/AlarmTypes.yaml
+- Name: RecipeSchema1
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/TBTech_course/Recipes/RecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: "/Objects/TBTech_course/Recipes/RecipeSchema1/EditModel"

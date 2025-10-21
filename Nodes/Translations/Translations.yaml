@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [38,3],
+    "Dimensions": [59,3],
     "Body": [
      "","en-US","it-IT",
      "Connected to Station:","Connected to Station:","",
@@ -48,10 +48,32 @@ Children:
      "ChangePasswordFormPasswordMismatchMessage","Passwords do not match","",
      "LoginFormLoginSuccessful","Login successful","",
      "LoginFormAuthenticationFailed","Authentication failed","",
-     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user",""
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user","",
+     "RecipesEditorStoreOfSchema","Store of schema","L'archivio dello schema",
+     "Save","Save","Salva",
+     "Delete","Delete","Elimina",
+     "Load","Load","Carica",
+     "Apply","Apply","Applica",
+     "RecipeControllerRecipe","Recipe","Ricetta",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","Il nome della ricetta è vuoto",
+     "RecipeControllerCreatedAndSaved","created and saved","creata e salvata",
+     "RecipeControllerDeleted","deleted","eliminata",
+     "RecipeControllerRecipeApplied","Recipe applied","Ricetta applicata",
+     "RecipeControllerRecipeLoaded","Recipe loaded","Ricetta caricata",
+     "RecipeControllerSaved","saved","salvata",
+     "RecipesEditorNotARecipe","is not a recipe","non è una ricetta",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","Variabile RecipeSchema non trovata",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","RecipeSchema non impostato",
+     "RecipesEditorRecipeNotFound","Recipe not found","Ricetta non trovata",
+     "RecipesEditorNotAStore","is not a store","non è un archivio",
+     "RecipesEditorNotSet","is not set","non è impostato",
+     "RecipesEditorStore","Store","Archivio",
+     "RecipesEditorNotFound","not found","non trovato",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","EditModel dello schema"
     ]
    }
 - Name: LocalizationDictionary2
+  Id: g=0e1cb3f22604f3b5c7b73de85bc3a487
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -59,10 +81,78 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [3,3],
+    "Dimensions": [23,3],
     "Body": [
      "","en-US","it-IT",
      "_hi","Hi!","Ciao!",
-     "motor","Motor!","Motore!"
+     "motor","Motor!","Motore!",
+     "motor_1","motor 1","motore 1",
+     "motor_2","motor 2","motore 2",
+     "motor_3","motor 3","motore 3",
+     "motor_4","motor 4","motore 4",
+     "motor_5","motor 5","motore 5",
+     "motor_6","motor 6","motore 6",
+     "motor_7","motor 7","motore 7",
+     "motor_8","motor 8","motore 8",
+     "motor_9","motor 9","motore 9",
+     "motor_10","motor 10","motore 10",
+     "motor_11","motor 11","motore 11",
+     "motor_12","motor 12","motore 12",
+     "motor_13","motor 13","motore 13",
+     "motor_14","motor 14","motore 14",
+     "motor_15","motor 15","motore 15",
+     "motor_16","motor 16","motore 16",
+     "motor_17","motor 17","motore 17",
+     "motor_18","motor 18","motore 18",
+     "motor_19","motor 19","motore 19",
+     "motor_20","motor 20","motore 20"
     ]
    }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/temp/myTranslations.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TBTech_course/Translations/LocalizationDictionary2"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "e7cab90d0ab7e8b5b02218e38bca9a0e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

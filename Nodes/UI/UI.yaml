@@ -823,12 +823,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1260.0
+          Value: 1520.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 66.0
+          Value: 20.0
       - Name: Label2
         Type: Label
         Children:
@@ -858,12 +858,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1290.0
+          Value: 1550.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 95.0
+          Value: 50.0
       - Name: DropdownButton1
         Type: DropDownButton
         Children:
@@ -895,7 +895,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 15.0
+          Value: 75.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -910,11 +910,71 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: AnimationType
           Type: BaseDataVariableType
           DataType: DropDownButtonAnimationTypeEnum
           ModellingRule: Optional
           Value: 2
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 45.0
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_Italy.svg"
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Session}/ActualLocaleId"
+            - Name: ns=2;Pairs
+              Type: BaseObjectType
+              ModellingRule: None
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: LocaleId
+                  ModellingRule: None
+                  Value: "it-IT"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: None
+                  Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_Italy.svg"
+              - Name: Pair1
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: LocaleId
+                  ModellingRule: None
+                  Value: "en-US"
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: None
+                  Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_United_x5F_States.svg"
+        - Name: ImagePosition
+          Type: BaseDataVariableType
+          DataType: ButtonImagePosition
+          ModellingRule: Optional
+          Value: 5
     - Name: menu
       Type: Rectangle
       Children:

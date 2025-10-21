@@ -339,3 +339,472 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/TBTech_course/Alarms/TBAlarm"
+- Name: TBRecipeDialog
+  Id: g=bdfa330d0c5da563a18ee8f1cbd84ff8
+  Supertype: TBDialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+    Direction: Forward
+  - Name: Screen1
+    Type: Screen
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: header
+        Type: Rectangle
+        Children:
+        - Name: MoveTarget
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"X"}
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#ffffff"
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../..@NodeId"
+                - Name: Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Close"
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Recipe"}
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#ffffff"
+      - Name: Panel1
+        Type: Panel
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: Button2
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Save to DB"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 316.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 415.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 65.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 164.0
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/TBTech_course/Recipes/RecipeController"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "LoadFromPLC"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ErrorPolicy
+                    Type: BaseDataVariableType
+                    DataType: CopyErrorPolicy
+              - Name: MethodContainer2
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/TBTech_course/Recipes/RecipeController"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "SaveToDB"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: RecipeName
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/TBTech_course/Recipes/RecipeController/RecipeName"
+                  - Name: ErrorPolicy
+                    Type: BaseDataVariableType
+                    DataType: CopyErrorPolicy
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "!isempty({0})"
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/TBTech_course/Recipes/RecipeController/RecipeName"
+        - Name: Label2
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Variable1"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 257.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 150.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: SpinBox1
+          Type: SpinBox
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Double
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/TBTech_course/Model/MyRecipeTags/Variable1"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 80.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 377.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 145.0
+        - Name: Label3
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Variable2"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 260.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 185.0
+        - Name: Label4
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Variable3"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 260.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 220.0
+        - Name: Switch1
+          Type: Switch
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/TBTech_course/Model/MyRecipeTags/Variable2"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 70.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 380.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+        - Name: TextBox1
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/TBTech_course/Model/MyRecipeTags/Variable3"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 380.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 215.0
+        - Name: TextBox2
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/TBTech_course/Recipes/RecipeController/RecipeName"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 189.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 291.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 80.0
+          - Name: PlaceholderText
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"insert recipe name"}
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 800.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
