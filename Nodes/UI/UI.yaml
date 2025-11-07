@@ -976,6 +976,299 @@ Children:
           DataType: ButtonImagePosition
           ModellingRule: Optional
           Value: 5
+      - Name: Accordion1
+        Type: Accordion
+        Children:
+        - Name: Header
+          Type: AccordionHeader
+          Children:
+          - Name: Rectangle1
+            Type: Rectangle
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: Image1
+              Type: Image
+              Children:
+              - Name: Path
+                Type: BaseDataVariableType
+                DataType: ResourceUri
+                Children:
+                - Name: KeyValueConverter1
+                  Type: ValueMapConverter
+                  Children:
+                  - Name: Source
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Session}/ActualLocaleId"
+                  - Name: ns=2;Pairs
+                    Type: BaseObjectType
+                    Children:
+                    - Name: Pair
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: LocaleId
+                        Value: "it-IT"
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: ResourceUri
+                        Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_Italy.svg"
+                    - Name: Pair1
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: LocaleId
+                        Value: "en-US"
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: ResourceUri
+                        Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_United_x5F_States.svg"
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 50.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 50.0
+        - Name: Content
+          Type: AccordionContent
+          Children:
+          - Name: LanguageSelector1
+            Type: LanguageSelector
+            Children:
+            - Name: ScrollView1
+              Type: ScrollView
+              Children:
+              - Name: ContentWidth
+                Type: BaseDataVariableType
+                DataType: Size
+                AccessLevel: Read
+              - Name: ContentHeight
+                Type: BaseDataVariableType
+                DataType: Size
+                AccessLevel: Read
+              - Name: ViewWidth
+                Type: BaseDataVariableType
+                DataType: Size
+                AccessLevel: Read
+              - Name: ViewHeight
+                Type: BaseDataVariableType
+                DataType: Size
+                AccessLevel: Read
+              - Name: ContentX
+                Type: BaseDataVariableType
+                DataType: Size
+              - Name: ContentY
+                Type: BaseDataVariableType
+                DataType: Size
+              - Class: Reference
+                Target: ns=3;i=1394
+                Direction: Forward
+              - Name: VerticalLayout1
+                Type: ColumnLayout
+                Children:
+                - Name: Flag_IT1
+                  Type: Image
+                  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_Italy.svg"
+                  - Name: MouseDownEventHandler1
+                    Type: EventHandler
+                    Children:
+                    - Name: ListenEventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+                    - Name: MethodsToCall
+                      Type: BaseObjectType
+                      Children:
+                      - Name: MethodContainer1
+                        Type: BaseObjectType
+                        Children:
+                        - Name: ObjectPointer
+                          Type: NodePointer
+                          DataType: NodeId
+                          Value: "/Objects/Commands/VariableCommands"
+                          Children:
+                          - Name: Kind
+                            Type: PropertyType
+                            DataType: NodeId
+                            Value: "/Types/ObjectTypes/BaseObjectType"
+                        - Name: Method
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "Set"
+                        - Name: InputArguments
+                          Type: BaseObjectType
+                          Children:
+                          - Name: VariableToModify
+                            Type: BaseDataVariableType
+                            DataType: VariablePointer
+                            Children:
+                            - Name: DynamicLink
+                              Type: DynamicLink
+                              DataType: NodePath
+                              Value: "{Session}/ActualLocaleId@NodeId"
+                          - Name: Value
+                            Type: BaseDataVariableType
+                            DataType: LocaleId
+                            Value: "it-IT"
+                          - Name: ArrayIndex
+                            Type: BaseDataVariableType
+                            DataType: UInt32
+                            ValueRank: ScalarOrOneDimension
+                    - Name: EventArguments
+                      Type: MouseDownEvent
+                      Children:
+                      - Name: EventId
+                        Type: PropertyType
+                        DataType: ByteString
+                      - Name: EventType
+                        Type: PropertyType
+                        DataType: NodeId
+                      - Name: SourceNode
+                        Type: PropertyType
+                        DataType: NodeId
+                      - Name: SourceName
+                        Type: PropertyType
+                        DataType: String
+                      - Name: Time
+                        Type: PropertyType
+                        DataType: UtcTime
+                      - Name: ReceiveTime
+                        Type: PropertyType
+                        DataType: UtcTime
+                      - Name: Message
+                        Type: PropertyType
+                        DataType: LocalizedText
+                      - Name: Severity
+                        Type: PropertyType
+                        DataType: UInt16
+                - Name: Flag_US1
+                  Type: Image
+                  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+                  Children:
+                  - Name: Path
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=7;%PROJECTDIR%/res/Flag_x5F_United_x5F_States.svg"
+                  - Name: MouseDownEventHandler1
+                    Type: EventHandler
+                    Children:
+                    - Name: ListenEventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+                    - Name: MethodsToCall
+                      Type: BaseObjectType
+                      Children:
+                      - Name: MethodContainer1
+                        Type: BaseObjectType
+                        Children:
+                        - Name: ObjectPointer
+                          Type: NodePointer
+                          DataType: NodeId
+                          Value: "/Objects/Commands/VariableCommands"
+                          Children:
+                          - Name: Kind
+                            Type: PropertyType
+                            DataType: NodeId
+                            Value: "/Types/ObjectTypes/BaseObjectType"
+                        - Name: Method
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "Set"
+                        - Name: InputArguments
+                          Type: BaseObjectType
+                          Children:
+                          - Name: VariableToModify
+                            Type: BaseDataVariableType
+                            DataType: VariablePointer
+                            Children:
+                            - Name: DynamicLink
+                              Type: DynamicLink
+                              DataType: NodePath
+                              Value: "{Session}/ActualLocaleId@NodeId"
+                          - Name: Value
+                            Type: BaseDataVariableType
+                            DataType: LocaleId
+                            Value: "en-US"
+                          - Name: ArrayIndex
+                            Type: BaseDataVariableType
+                            DataType: UInt32
+                            ValueRank: ScalarOrOneDimension
+                    - Name: EventArguments
+                      Type: MouseDownEvent
+                      Children:
+                      - Name: EventId
+                        Type: PropertyType
+                        DataType: ByteString
+                      - Name: EventType
+                        Type: PropertyType
+                        DataType: NodeId
+                      - Name: SourceNode
+                        Type: PropertyType
+                        DataType: NodeId
+                      - Name: SourceName
+                        Type: PropertyType
+                        DataType: String
+                      - Name: Time
+                        Type: PropertyType
+                        DataType: UtcTime
+                      - Name: ReceiveTime
+                        Type: PropertyType
+                        DataType: UtcTime
+                      - Name: Message
+                        Type: PropertyType
+                        DataType: LocalizedText
+                      - Name: Severity
+                        Type: PropertyType
+                        DataType: UInt16
+        - Name: Expanded
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 200.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 1160.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
     - Name: menu
       Type: Rectangle
       Children:
