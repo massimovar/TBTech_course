@@ -189,3 +189,5 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: RuntimeNetLogic1
+  Type: NetLogic

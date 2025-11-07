@@ -1,0 +1,18 @@
+Name: Folder1
+Type: FolderType
+Children:
+- Name: Var1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Var2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Var3
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Var4
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Var5
+  Type: BaseDataVariableType
+  DataType: Boolean

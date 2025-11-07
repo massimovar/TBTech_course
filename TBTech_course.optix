@@ -138,15 +138,15 @@ Project:
    Module: FTOptix.TwinCAT.Net
    Version: 3.0
  Statistics:
-  TotalNodeCount: 4259
-  Objects: 844
-  ObjectTypes: 25
-  Variables: 3368
+  TotalNodeCount: 4401
+  Objects: 881
+  ObjectTypes: 26
+  Variables: 3470
   VariableTypes: 0
   DataTypes: 0
-  Methods: 22
-  References: 413
+  Methods: 24
+  References: 414
   ReferenceTypes: 0
-  Files: 43
+  Files: 44
  Nodes:
  - File: Nodes/TBTech_course.yaml

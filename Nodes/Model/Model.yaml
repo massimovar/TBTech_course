@@ -46,3 +46,4 @@ Children:
       DataType: LocalizedText
 - File: MyRecipeTags/MyRecipeTags.yaml
 - File: VarsToLog/VarsToLog.yaml
+- File: Folder1/Folder1.yaml
