@@ -1,0 +1,19 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: HMI.Var1
+  Type: TwinCATTag
+  DataType: Int16
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "HMI.Var1"
+- Name: HMI.var2
+  Type: TwinCATTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "HMI.var2"

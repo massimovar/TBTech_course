@@ -1,0 +1,4 @@
+Name: TwinCATDriver1
+Type: TwinCATDriver
+Children:
+- File: TwinCATStation1/TwinCATStation1.yaml

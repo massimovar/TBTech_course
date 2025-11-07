@@ -7,6 +7,8 @@ using FTOptix.Store;
 using FTOptix.EventLogger;
 using FTOptix.System;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

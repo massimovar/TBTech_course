@@ -9,6 +9,8 @@ using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.System;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 #endregion
 
 public class LoginFormOutputMessageLogic : BaseNetLogic

@@ -1,6 +1,6 @@
 Name: TagImporter
-Type: CODESYSTagImporter
-OwnerId: ns=2;g=cb0d496c47a4cebd5262de0e18d4d2c5
+Type: TwinCATTagImporter
+OwnerId: ns=2;g=66f4035056fbc1085c0d5c08a04ec049
 Children:
 - Name: IgnoredPLCItems
   Type: BaseDataVariableType
@@ -14,5 +14,5 @@ Children:
   ArrayDimensions: [0]
 - Name: Mode
   Type: BaseDataVariableType
-  DataType: ns=6;FetchProviderModes
+  DataType: ns=9;FetchProviderModes
   Value: 1

@@ -50,6 +50,9 @@ Children:
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
+        - Name: 'Message_it-IT'
+          Type: StoreColumn
+          DataType: String
     - Name: RecipeSchema1
       Type: SQLiteStoreTable
       Children:
@@ -80,6 +83,73 @@ Children:
         - Name: /Variable3
           Type: StoreColumn
           DataType: String
+    - Name: DataLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=23;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Variable1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable2
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable3
+          Type: StoreColumn
+          DataType: Int32
+        - Name: HMI.Var1
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000000
+    - Name: DataLogger2
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=23;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=23;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: HMI.var2
+          Type: StoreColumn
+          DataType: Boolean
   - Class: Reference
     Target: ns=25;i=30
     Direction: Forward

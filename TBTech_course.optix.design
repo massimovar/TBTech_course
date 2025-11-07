@@ -31,16 +31,21 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  9:
+   Uri: 'urn:FTOptix:TwinCATTagImporter'
+   Module: FTOptix.TwinCATTagImporter
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 4
-  Objects: 1
+  TotalNodeCount: 8
+  Objects: 2
   ObjectTypes: 0
-  Variables: 3
+  Variables: 6
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 1
+  Files: 2
  Nodes:
  - File: DesignTimeNodes/CommDrivers/CODESYSDriver1/CODESYSStation1/TagImporter.yaml
+ - File: DesignTimeNodes/CommDrivers/TwinCATDriver1/TwinCATStation1/TagImporter.yaml

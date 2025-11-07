@@ -6,6 +6,8 @@ using UAManagedCore;
 using FTOptix.UI;
 using FTOptix.NetLogic;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 #endregion
 
 public class ClockLogic : BaseNetLogic

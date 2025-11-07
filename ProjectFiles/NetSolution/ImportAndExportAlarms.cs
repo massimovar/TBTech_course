@@ -16,6 +16,8 @@ using System.Text.RegularExpressions;
 using UAManagedCore;
 using FTOptix.System;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion

@@ -45,3 +45,4 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
 - File: MyRecipeTags/MyRecipeTags.yaml
+- File: VarsToLog/VarsToLog.yaml

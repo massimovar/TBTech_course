@@ -9,6 +9,8 @@ using FTOptix.Core;
 using FTOptix.UI;
 using FTOptix.System;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 #endregion
 
 public class LoginButtonLogic : BaseNetLogic

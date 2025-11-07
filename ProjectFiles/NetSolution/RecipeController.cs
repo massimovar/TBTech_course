@@ -12,6 +12,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Globalization;
 using FTOptix.Store;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 
 #endregion
 

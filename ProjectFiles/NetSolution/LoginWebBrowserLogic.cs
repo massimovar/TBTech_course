@@ -14,6 +14,8 @@ using System.Security.Cryptography;
 using System.Text;
 using FTOptix.System;
 using FTOptix.Recipe;
+using FTOptix.DataLogger;
+using FTOptix.TwinCAT;
 #endregion
 
 public class LoginWebBrowserLogic : BaseNetLogic

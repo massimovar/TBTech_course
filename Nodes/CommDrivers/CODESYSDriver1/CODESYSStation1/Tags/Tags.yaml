@@ -103,7 +103,7 @@ Children:
             Value: 20
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
         - Name: Temperatura
           Type: CODESYSTag
           DataType: Float
@@ -122,7 +122,7 @@ Children:
             Value: "Application.GVL.Motori[1].TempoFunzionamento"
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
       - Name: 2
         Type: TagStructure
         DataType: Structure
@@ -185,7 +185,7 @@ Children:
             Value: 20
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
         - Name: Temperatura
           Type: CODESYSTag
           DataType: Float
@@ -204,7 +204,7 @@ Children:
             Value: "Application.GVL.Motori[2].TempoFunzionamento"
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
       - Name: 3
         Type: TagStructure
         DataType: Structure
@@ -267,7 +267,7 @@ Children:
             Value: 20
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
         - Name: Temperatura
           Type: CODESYSTag
           DataType: Float
@@ -286,7 +286,7 @@ Children:
             Value: "Application.GVL.Motori[3].TempoFunzionamento"
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
       - Name: 4
         Type: TagStructure
         DataType: Structure
@@ -349,7 +349,7 @@ Children:
             Value: 20
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
         - Name: Temperatura
           Type: CODESYSTag
           DataType: Float
@@ -368,7 +368,7 @@ Children:
             Value: "Application.GVL.Motori[4].TempoFunzionamento"
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
       - Name: 5
         Type: TagStructure
         DataType: Structure
@@ -431,7 +431,7 @@ Children:
             Value: 20
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
         - Name: Temperatura
           Type: CODESYSTag
           DataType: Float
@@ -450,4 +450,4 @@ Children:
             Value: "Application.GVL.Motori[5].TempoFunzionamento"
           - Name: Encoding
             Type: BaseDataVariableType
-            DataType: Encoding
+            DataType: ns=10;Encoding
